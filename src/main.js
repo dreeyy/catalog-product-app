@@ -15,8 +15,7 @@ import "ant-design-vue/dist/antd.css"
 
 // require("./store/subscribe");
 
-axios.defaults.baseURL = "http://localhost:5000";
-//axios.defaults.baseURL = "https://product-catalog-hackathon.herokuapp.com";
+axios.defaults.baseURL = "https://catalog-product-dafiti.herokuapp.com/";
 
 // store.dispatch('attempt', sessionStorage.getItem('token'));
 

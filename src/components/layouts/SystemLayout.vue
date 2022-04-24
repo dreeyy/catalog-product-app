@@ -4,7 +4,7 @@
       v-model="collapsed"
       :trigger="null"
       collapsible
-      :style="{ background: 'rgb(3, 3, 67)' }"
+      :style="{ background: 'rgb(0, 0, 0)' }"
     >
       <div class="logo" :style="{ border: '', height: '6%' }">
           <h1 v-if="!collapsed" :style="{ color: 'rgb(191, 120, 20)', margin: 'auto 0', fontWeight: 'bold', fontSize: '18px' }">Product Catalog</h1>
@@ -12,8 +12,8 @@
           <img v-if="collapsed" :style="{ width: '100%', height: '100%', borderRadius: '50%' }" src="logo.png" alt="">
       </div>
 
-      <a-menu class="layout-sider-menu" theme="dark" mode="inline" :style="{ background: 'rgb(3, 3, 67)' }">
-        <a-menu-item key="1" @click="toProducts" v-if="getActiveUser['role'] === 'CUSTOMER'" :style="{ background: 'rgb(3, 3, 67)' }">
+      <a-menu class="layout-sider-menu" theme="dark" mode="inline" :style="{ background: 'rgb(0, 0, 0)' }">
+        <a-menu-item key="1" @click="toProducts" v-if="getActiveUser['role'] === 'CUSTOMER'" :style="{ background: 'rgb(0, 0, 0)' }">
             <a-icon :style="{ fontSize: '24px', color: 'rgb(191, 120, 20)' }" type="shop" />
             <span :style="{ color: 'white', fontSize: '12px', fontWeight: 'bold' }">Products</span>
         </a-menu-item>
@@ -77,8 +77,8 @@
         <slot v-if="!loading" />
       </a-layout-content>
 
-      <a-layout-footer :style="{ textAlign: 'center', color: 'rgb(3, 3, 67)' }">
-        Valentine Sean Chanengeta ©2022 MongoDB Atlas Hackathon
+      <a-layout-footer :style="{ textAlign: 'center', color: 'rgb(0, 0, 0)' }">
+        Test Dafiti
       </a-layout-footer>
     </a-layout>
   </a-layout>
@@ -143,7 +143,7 @@
   }
 
   #components-layout-demo-custom-trigger .trigger:hover {
-    color: #1890ff;
+    color: #000000;
   }
 
   #components-layout-demo-custom-trigger .logo {
